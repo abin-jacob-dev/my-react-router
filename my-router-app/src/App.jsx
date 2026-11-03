@@ -2,8 +2,11 @@ import Users from './Pages/Users'
 import Home from './Pages/Home'
 import Settings from './Pages/Settings'
 import Usage from './Pages/Usage'
+import Details from './Pages/Details'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
+
+
 
 import './App.css'
 
@@ -21,6 +24,7 @@ function App() {
             <Route path="users" element={<Users />} />
             <Route path="usage" element={<Usage />} />
             <Route path="settings" element={<Settings />} />
+            <Route path="details/:userId" element={<Details />} />
           </Routes>
         </div>
       </BrowserRouter>

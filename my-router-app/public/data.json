@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Arun Kumar",
+    "class": "10",
+    "address": "Thrissur, Kerala",
+    "phone": "9876543210",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Anjali Menon",
+    "class": "9",
+    "address": "Kochi, Kerala",
+    "phone": "9876543211",
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "Rahul Raj",
+    "class": "8",
+    "address": "Palakkad, Kerala",
+    "phone": "9876543212",
+    "isActive": false
+  },
+  {
+    "id": 4,
+    "name": "Sneha Nair",
+    "class": "10",
+    "address": "Kozhikode, Kerala",
+    "phone": "9876543213",
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "name": "Vishnu Prasad",
+    "class": "7",
+    "address": "Malappuram, Kerala",
+    "phone": "9876543214",
+    "isActive": true
+  },
+  {
+    "id": 6,
+    "name": "Meera Thomas",
+    "class": "9",
+    "address": "Kottayam, Kerala",
+    "phone": "9876543215",
+    "isActive": false
+  },
+  {
+    "id": 7,
+    "name": "Akhil Das",
+    "class": "8",
+    "address": "Kannur, Kerala",
+    "phone": "9876543216",
+    "isActive": true
+  },
+  {
+    "id": 8,
+    "name": "Devika Suresh",
+    "class": "6",
+    "address": "Alappuzha, Kerala",
+    "phone": "9876543217",
+    "isActive": true
+  },
+  {
+    "id": 9,
+    "name": "Nikhil Mohan",
+    "class": "10",
+    "address": "Idukki, Kerala",
+    "phone": "9876543218",
+    "isActive": false
+  },
+  {
+    "id": 10,
+    "name": "Athira Raj",
+    "class": "7",
+    "address": "Thiruvananthapuram, Kerala",
+    "phone": "9876543219",
+    "isActive": true
+  }
+]
