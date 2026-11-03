@@ -5,10 +5,11 @@ import Usage from './Pages/Usage'
 import Details from './Pages/Details'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from './components/Header';
-
+import NotFound from './Pages/NotFound'
 
 
 import './App.css'
+
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="usage" element={<Usage />} />
             <Route path="settings" element={<Settings />} />
             <Route path="details/:userId" element={<Details />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
       </BrowserRouter>

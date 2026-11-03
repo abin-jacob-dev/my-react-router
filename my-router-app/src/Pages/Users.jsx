@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './Users.css'
-import { Link, useSearchParams } from 'react-router-dom'
+import { Link, useNavigate, useSearchParams } from 'react-router-dom'
 
 function Users() {
+  const navigate = useNavigate()
   const [data, setData] = useState([])
   const [searchParams, setSearchParams] = useSearchParams()
 
@@ -52,8 +53,12 @@ function Users() {
         }
         return cls === item.class
       }).map((item) => (
-        <div key={item.id} className='user-card'>
-          <Link to={`/details/${item.id}`} className='user-name'>{item.name}</Link>
+        <div key={item.id} className='user-card' onClick={() => navigate(`/details/${item.id}`, {
+          state: {
+            data: item
+          }
+        })}>
+          <div className='user-name'>{item.name}</div>
           <div className='user-address'>{item.address}</div>
           <div className='user-address'>Class : {item.class}</div>
         </div>
