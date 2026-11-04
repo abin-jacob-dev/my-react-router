@@ -1,82 +1,183 @@
+
 [
   {
     "id": 1,
-    "name": "Arun Kumar",
-    "class": "10",
-    "address": "Thrissur, Kerala",
+    "name": "Arjun",
+    "class": "6",
+    "address": "12 Green Park Road",
     "phone": "9876543210",
-    "isActive": true
+    "isActive": true,
+    "marks": {
+      "physics": [76, 82, 91, 65, 88],
+      "chemistry": [68, 79, 85, 92, 74],
+      "maths": [89, 76, 95, 83, 71]
+    },
+    "sports": {
+      "highjump": 2,
+      "longjump": 3
+    },
+    "remarks": ["Good performance"]
   },
   {
     "id": 2,
-    "name": "Anjali Menon",
-    "class": "9",
-    "address": "Kochi, Kerala",
-    "phone": "9876543211",
-    "isActive": true
+    "name": "Meera",
+    "class": "7",
+    "address": "45 Rose Garden Street",
+    "phone": "9871234560",
+    "isActive": false,
+    "marks": {
+      "physics": [56, 67, 78, 84, 91],
+      "chemistry": [72, 81, 69, 88, 95],
+      "maths": [64, 77, 86, 92, 73]
+    },
+    "sports": {
+      "highjump": 1,
+      "longjump": 2
+    },
+    "remarks": ["Needs improvement"]
   },
   {
     "id": 3,
-    "name": "Rahul Raj",
+    "name": "Rahul",
     "class": "8",
-    "address": "Palakkad, Kerala",
-    "phone": "9876543212",
-    "isActive": false
+    "address": "78 Lake View Road",
+    "phone": "9898765432",
+    "isActive": true,
+    "marks": {
+      "physics": [91, 85, 76, 88, 93],
+      "chemistry": [82, 94, 79, 86, 90],
+      "maths": [95, 89, 92, 78, 84]
+    },
+    "sports": {
+      "highjump": 3,
+      "longjump": 4
+    },
+    "remarks": ["Excellent student"]
   },
   {
     "id": 4,
-    "name": "Sneha Nair",
-    "class": "10",
-    "address": "Kozhikode, Kerala",
-    "phone": "9876543213",
-    "isActive": true
+    "name": "Ananya",
+    "class": "6",
+    "address": "23 Hill Station Road",
+    "phone": "9845671230",
+    "isActive": true,
+    "marks": {
+      "physics": [45, 62, 71, 58, 69],
+      "chemistry": [56, 64, 73, 81, 67],
+      "maths": [78, 69, 55, 82, 74]
+    },
+    "sports": {
+      "highjump": 2,
+      "longjump": 1
+    },
+    "remarks": ["Average performance"]
   },
   {
     "id": 5,
-    "name": "Vishnu Prasad",
-    "class": "7",
-    "address": "Malappuram, Kerala",
-    "phone": "9876543214",
-    "isActive": true
+    "name": "Vishnu",
+    "class": "9",
+    "address": "91 Temple Road",
+    "phone": "9812345670",
+    "isActive": false,
+    "marks": {
+      "physics": [88, 92, 79, 85, 96],
+      "chemistry": [91, 87, 83, 94, 89],
+      "maths": [76, 84, 91, 88, 95]
+    },
+    "sports": {
+      "highjump": 4,
+      "longjump": 3
+    },
+    "remarks": ["Very good"]
   },
   {
     "id": 6,
-    "name": "Meera Thomas",
-    "class": "9",
-    "address": "Kottayam, Kerala",
-    "phone": "9876543215",
-    "isActive": false
+    "name": "Diya",
+    "class": "7",
+    "address": "56 River Side Avenue",
+    "phone": "9890123456",
+    "isActive": true,
+    "marks": {
+      "physics": [67, 73, 81, 59, 86],
+      "chemistry": [78, 85, 69, 91, 76],
+      "maths": [82, 74, 93, 68, 87]
+    },
+    "sports": {
+      "highjump": 1,
+      "longjump": 4
+    },
+    "remarks": ["Good"]
   },
   {
     "id": 7,
-    "name": "Akhil Das",
+    "name": "Adithya",
     "class": "8",
-    "address": "Kannur, Kerala",
-    "phone": "9876543216",
-    "isActive": true
+    "address": "34 Palace Road",
+    "phone": "9878901234",
+    "isActive": true,
+    "marks": {
+      "physics": [39, 56, 68, 72, 61],
+      "chemistry": [48, 59, 65, 71, 54],
+      "maths": [62, 75, 58, 69, 81]
+    },
+    "sports": {
+      "highjump": 2,
+      "longjump": 2
+    },
+    "remarks": ["Needs more practice"]
   },
   {
     "id": 8,
-    "name": "Devika Suresh",
-    "class": "6",
-    "address": "Alappuzha, Kerala",
-    "phone": "9876543217",
-    "isActive": true
+    "name": "Sneha",
+    "class": "9",
+    "address": "67 Sunshine Avenue",
+    "phone": "9865432109",
+    "isActive": true,
+    "marks": {
+      "physics": [95, 89, 92, 97, 85],
+      "chemistry": [88, 96, 91, 84, 93],
+      "maths": [92, 98, 87, 95, 90]
+    },
+    "sports": {
+      "highjump": 4,
+      "longjump": 5
+    },
+    "remarks": ["Outstanding"]
   },
   {
     "id": 9,
-    "name": "Nikhil Mohan",
-    "class": "10",
-    "address": "Idukki, Kerala",
-    "phone": "9876543218",
-    "isActive": false
+    "name": "Joel",
+    "class": "6",
+    "address": "19 Church Road",
+    "phone": "9843215670",
+    "isActive": false,
+    "marks": {
+      "physics": [61, 74, 58, 83, 69],
+      "chemistry": [72, 65, 79, 86, 63],
+      "maths": [55, 68, 74, 81, 77]
+    },
+    "sports": {
+      "highjump": 1,
+      "longjump": 3
+    },
+    "remarks": ["Notes not submitted"]
   },
   {
     "id": 10,
-    "name": "Athira Raj",
-    "class": "7",
-    "address": "Thiruvananthapuram, Kerala",
-    "phone": "9876543219",
-    "isActive": true
+    "name": "Akhila",
+    "class": "8",
+    "address": "82 Market Road",
+    "phone": "9801234567",
+    "isActive": true,
+    "marks": {
+      "physics": [84, 76, 91, 87, 79],
+      "chemistry": [93, 81, 75, 89, 86],
+      "maths": [88, 94, 82, 77, 91]
+    },
+    "sports": {
+      "highjump": 3,
+      "longjump": 2
+    },
+    "remarks": ["Good progress"]
   }
 ]

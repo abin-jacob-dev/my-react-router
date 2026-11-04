@@ -25,7 +25,7 @@ function App() {
             <Route path="users" element={<Users />} />
             <Route path="usage" element={<Usage />} />
             <Route path="settings" element={<Settings />} />
-            <Route path="details/:userId" element={<Details />} />
+            <Route path="details/:userId/*" element={<Details />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
