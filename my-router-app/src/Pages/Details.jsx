@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Routes, Route, NavLink, useLocation, useNavigate, useParams } from 'react-router-dom'
+import {  NavLink, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom'
 import axios from 'axios'
 import './Details.css'
-import Marks from './Marks'
-import Sports from './Sports'
-import Remarks from './Remarks'
 
 function Details() {
   const location = useLocation()
@@ -61,11 +58,7 @@ function Details() {
       </div>
 
       <div>
-        <Routes>
-          <Route path="" element={<Marks />} />
-          <Route path="sports" element={<Sports user={user}/>} />
-          <Route path="remarks" element={<Remarks remarks={user.remarks} />} />
-        </Routes>
+        <Outlet context={user} />
       </div>
 
       <button onClick={() => {

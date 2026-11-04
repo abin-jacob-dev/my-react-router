@@ -1,12 +1,29 @@
 import React from 'react'
 
-function Sports({user}) {
-    return (
-        <>
-        <div>High Jump : {user.sports.highjump}</div>
-        <div>Long Jump : {user.sports.longjump}</div>
-        </>
-    )
+import { useOutletContext } from 'react-router-dom';
+import './Sports.css';
+
+function Sports() {
+
+  const {sports = {}} = useOutletContext();
+  return (
+    <div className="sports">
+        {
+            Object.keys(sports).map((item) => {
+                return (
+                    <div key={item}>
+                        <div>
+                            {item}
+                        </div>
+                        <div>
+                            {sports[item] > 0 ? 'Position ' + sports[item] : 'Participated'}
+                        </div>
+                    </div>
+                )
+            })
+        }
+    </div>
+  )
 }
 
-export default Sports
+export default Sports;

@@ -1,9 +1,19 @@
 import React from 'react'
+import { useOutletContext } from 'react-router-dom';
+import './Remarks.css';
 
-function Remarks({remarks}) {
+function Remarks() {
+  const {remarks = []} = useOutletContext();
+
   return (
-    <div>{remarks}</div>
+    <div className="remarks">
+        {
+            remarks.map((item) => {
+                return <div key={item}>{item}</div>
+            })
+        }
+    </div>
   )
 }
 
-export default Remarks
+export default Remarks;
