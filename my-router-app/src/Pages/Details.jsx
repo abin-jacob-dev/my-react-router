@@ -36,17 +36,35 @@ function Details() {
       <div className='details-row'>Phone : {user.phone}</div>
       <div className='details-row'>Class : {user.class}</div>
 
-      <div>
-        <NavLink to="marks" >Marks</NavLink>
-        <NavLink to="sports" >Sports</NavLink>
-        <NavLink to="remarks" >Remarks</NavLink>
+      <div className='details-nav'>
+        <NavLink
+          to={`/details/${userId}`}
+          end
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Marks
+        </NavLink>
+        <NavLink
+          to={`/details/${userId}/sports`}
+
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Sports
+        </NavLink>
+        <NavLink
+          to={`/details/${userId}/remarks`}
+
+          className={({ isActive }) => (isActive ? 'active' : '')}
+        >
+          Remarks
+        </NavLink>
       </div>
 
       <div>
         <Routes>
-          <Route path="marks" element={<Marks />} />
-          <Route path="sports" element={<Sports />} />
-          <Route path="remarks" element={<Remarks />} />
+          <Route path="" element={<Marks />} />
+          <Route path="sports" element={<Sports user={user}/>} />
+          <Route path="remarks" element={<Remarks remarks={user.remarks} />} />
         </Routes>
       </div>
 

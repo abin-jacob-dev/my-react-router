@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Remarks() {
+function Remarks({remarks}) {
   return (
-    <div>Remarks</div>
+    <div>{remarks}</div>
   )
 }
 

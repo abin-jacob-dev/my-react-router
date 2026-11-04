@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Sports() {
+function Sports({user}) {
     return (
-        <div>Sports</div>
+        <>
+        <div>High Jump : {user.sports.highjump}</div>
+        <div>Long Jump : {user.sports.longjump}</div>
+        </>
     )
 }
 
