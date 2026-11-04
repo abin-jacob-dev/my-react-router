@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {  NavLink, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom'
 import axios from 'axios'
 import './Details.css'
 
@@ -35,21 +35,21 @@ function Details() {
 
       <div className='details-nav'>
         <NavLink
-          to={`/details/${userId}`}
+          to=''
           end
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Marks
         </NavLink>
         <NavLink
-          to={`/details/${userId}/sports`}
+          to="sports"
 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Sports
         </NavLink>
         <NavLink
-          to={`/details/${userId}/remarks`}
+          to="remarks"
 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
@@ -62,7 +62,7 @@ function Details() {
       </div>
 
       <button onClick={() => {
-        navigate("/users")
+        navigate("..")
       }} >Back</button>
     </div>
   )

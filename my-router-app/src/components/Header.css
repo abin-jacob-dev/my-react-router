@@ -1,18 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 .header {
     background: rgb(98, 98, 230);
-    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.header a {
+.nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
     text-decoration: none;
     color: white;
+    display: inline-block;
+    padding: 10px 15px;
 }
 
-.header span {
-    padding: 5px;
-    display: inline-block;
-}
-.header .active{
+.nav a.active {
     background: rgb(0, 0, 175);
-    border-bottom: 3px solid white;
+    border-bottom: 2px solid white;
+}
+
+.main {
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+    min-height: calc(100vh - 100px);
 }

@@ -53,7 +53,7 @@ function Users() {
         }
         return cls === item.class
       }).map((item) => (
-        <div key={item.id} className='user-card' onClick={() => navigate(`/details/${item.id}`, {
+        <div key={item.id} className='user-card' onClick={() => navigate(`${item.id}`, {
           state: {
             data: item
           }
