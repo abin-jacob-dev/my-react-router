@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from 'react'
 
 const MyComp = React.lazy(() => {
-  return import('../components/Section');
+  return import(/*webpackChunkName:"Section"*/'../components/Section');
 })
 function Settings() {
   const [state, setState] = useState(false)
