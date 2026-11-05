@@ -12,34 +12,26 @@ import Sports from './Pages/Sports'
 
 import './App.css'
 
-
 function App() {
-
   return (
-    <div >
-      <BrowserRouter >
-        
-        <div className='page'>
-          <Routes >
-            <Route path='/' element={<Header />}>
-              <Route index element={<Home />} />
-              <Route path="/usage" element={<Usage />} />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/users"  >
-                <Route index element={<Users />} />
-                <Route path=":userId" element={<Details />} >
-                  <Route index element={<Marks />} />
-                  <Route path="sports" element={<Sports />} />
-                  <Route path="remarks" element={<Remarks />} />
-                </Route>
-              </Route>
-              <Route path="*" element={<NotFound />} />
+    <BrowserRouter basename='my-react-router'>
+      <Routes>
+        <Route path='/' element={<Header />}>
+          <Route index element={<Home />} />
+          <Route path="usage" element={<Usage />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="users">
+            <Route index element={<Users />} />
+            <Route path=":userId" element={<Details />}>
+              <Route index element={<Marks />} />
+              <Route path="sports" element={<Sports />} />
+              <Route path="remarks" element={<Remarks />} />
             </Route>
-          </Routes>
-        </div>
-      </BrowserRouter >
-    </div >
-
+          </Route>
+          <Route path="*" element={<NotFound />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

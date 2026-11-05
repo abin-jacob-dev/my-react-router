@@ -15,7 +15,7 @@ function Details() {
 
   useEffect(() => {
     if (!user) {
-      axios('/data.json').then((response) => {
+      axios('/my-react-router/data.json').then((response) => {
         const item = response.data.find((userItem) => userItem.id === parseInt(userId))
         setUser(item)
       })
