@@ -1,0 +1,23 @@
+### 1. React Router and Navigation
+
+- Use react\_router\_dom for routing in React applications.
+- Implement routes, nested routing, and dynamic route parameters using useNavigate, useParams, and Outlet.
+- Handle page navigation and protect routes as needed.
+
+### 2. Global State Management with Context API
+
+- Share and manage global state using Context and useContext.
+- Optimize components using useCallback and useMemo.
+- Pass and access data across multiple components without prop drilling.
+
+### 3. Advanced React Concepts
+
+- Build and reuse logic with custom hooks for cleaner code.
+- Use Higher Order Components (HOC) for enhancing component functionality.
+- Understand bundling concepts using Babel and Webpack.
+
+### 4. Create a Blog Posting Project
+
+- Implement Firebase Authentication and manage user state using Context.
+- Create multiple pages – login page, blog listing, and add/edit blog post page.
+- Store, retrieve, update, and delete blog posts (text only) using Firestore and deploy the built project.

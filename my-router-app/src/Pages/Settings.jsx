@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { Suspense, useState } from 'react'
 
+const MyComp = React.lazy(() => {
+  return import('../components/Section');
+})
 function Settings() {
+  const [state, setState] = useState(false)
   return (
-    <div>Settings</div>
+    <div>
+      <div>Settings</div>
+      {state && (<Suspense fallback={<div>Loading...</div>}> <MyComp /> </Suspense>)}
+
+      <button onClick={() => {
+        setState(true)
+      }} >Click</button>
+    </div>
   )
 }
 
