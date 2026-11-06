@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom'
 import axios from 'axios'
 import './Details.css'
+import PrivateLink from '../components/link/PrivateLink'
+
 
 function Details() {
   const location = useLocation()
@@ -34,27 +36,27 @@ function Details() {
       <div className='details-row'>Class : {user.class}</div>
 
       <div className='details-nav'>
-        <NavLink
+        <PrivateLink
           to=''
           end
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Marks
-        </NavLink>
-        <NavLink
+        </PrivateLink>
+        <PrivateLink
           to="sports"
 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Sports
-        </NavLink>
-        <NavLink
+        </PrivateLink>
+        <PrivateLink
           to="remarks"
 
           className={({ isActive }) => (isActive ? 'active' : '')}
         >
           Remarks
-        </NavLink>
+        </PrivateLink>
       </div>
 
       <div>
