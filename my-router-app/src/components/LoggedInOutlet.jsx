@@ -1,10 +1,14 @@
 import React from 'react'
-import { Outlet, Navigate } from 'react-router-dom'
-import { isLoggedIn } from '../utils/Common'
+import { Outlet, Navigate, useLocation } from 'react-router-dom'
+import { getRolesForPath, isLoggedIn, isPathAllowed } from '../utils/Common'
 
 
 function LoggedInOutlet() {
-    if (isLoggedIn()) {
+    const { pathname } = useLocation()
+    console.log(pathname);
+    const isAllowed = isPathAllowed(pathname)
+
+    if (isLoggedIn() && isAllowed) {
         return (
             <Outlet />
         )
