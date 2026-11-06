@@ -1,0 +1,1 @@
+import{a as e,i as t}from"./index-9BqRbpMX.js";e();var n=t();function r(){return(0,n.jsx)(`div`,{children:`Section`})}export{r as default};
