@@ -12,6 +12,7 @@ import NotFound from './Pages/NotFound'
 import Marks from './Pages/Marks'
 import Remarks from './Pages/Remarks'
 import Sports from './Pages/Sports'
+import Login from './Pages/Login'
 
 import './App.css'
 
@@ -22,8 +23,9 @@ const MyUsers = React.lazy(() => {
 function App() {
   return (
     <BrowserRouter basename='my-react-router'>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className='page'>Loading...</div>}>
         <Routes>
+          <Route path='/login' element={<Login />} />
           <Route path='/' element={<Header />}>
             <Route index element={<Home />} />
             <Route path="usage" element={<Usage />} />
@@ -38,6 +40,7 @@ function App() {
             </Route>
             <Route path="*" element={<NotFound />} />
           </Route>
+          
         </Routes>
       </Suspense>
     </BrowserRouter>

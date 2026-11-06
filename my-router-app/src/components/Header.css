@@ -23,6 +23,10 @@ html, body, #root {
     padding: 0;
 }
 
+.nav-spacer {
+    flex: 1;
+}
+
 .nav a {
     text-decoration: none;
     color: white;
@@ -33,6 +37,10 @@ html, body, #root {
 .nav a.active {
     background: rgb(0, 0, 175);
     border-bottom: 2px solid white;
+}
+
+.nav-logout {
+    margin-left: auto;
 }
 
 .main {
